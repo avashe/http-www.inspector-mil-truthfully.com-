@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth Hunting Workshop</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            text-align: center;
+            background-color: #f1e8d1; /* Light brown background */
+            padding: 20px;
+            color: #3e2723; /* Dark brown text */
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fdf2e9; /* Off-white with brownish tint */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #d7b49e; /* Light brown border */
+        }
+        h1 {
+            font-size: 36px;
+            color: #3e2723;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            filter: blur(1px) grayscale(100%);
+            animation: flicker 3s infinite alternate;
+        }
+        @keyframes flicker {
+            0% { filter: brightness(80%) grayscale(100%); }
+            50% { filter: brightness(120%) grayscale(0); }
+            100% { filter: brightness(90%) grayscale(100%); }
+        }
+        .image-container img {
+            max-width: 50%; /* Adjusted image width to 50% */
+            height: auto;
+            border-radius: 8px;
+            filter: sepia(70%);
+        }
+        .price {
+            font-size: 24px;
+            color: #7e4e3b; /* Slightly darker brown for price */
+            font-weight: bold;
+        }
+        .details {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #5c3d2e;
+        }
+        .cta-button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #7e4e3b;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #5a3222;
+        }
+        .exciting-factor {
+            font-size: 32px;
+            color: #d07a2d; /* Brownish-orange color for the neon light */
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: neonFlicker 1.5s infinite alternate;
+            text-shadow: 0 0 5px #d07a2d, 0 0 10px #d07a2d, 0 0 15px #d07a2d;
+        }
+        @keyframes neonFlicker {
+            0% { text-shadow: 0 0 5px #d07a2d, 0 0 10px #d07a2d, 0 0 15px #d07a2d; }
+            50% { text-shadow: 0 0 20px #d07a2d, 0 0 30px #d07a2d, 0 0 40px #d07a2d; }
+            100% { text-shadow: 0 0 5px #d07a2d, 0 0 10px #d07a2d, 0 0 15px #d07a2d; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <!-- Smaller detective GIF image with 50% width -->
+            <img src="https://i.pinimg.com/originals/7c/d7/ba/7cd7ba44cdc4598ade77787fefdb0f2d.gif" alt="Detective GIF">
+        </div>
+        <h1>Do You Seek to Uncover the Real Truth?</h1>
+        <p class="details">Join our Truth Hunting Workshop to learn the skills you need to uncover the truth behind misinformation. Dive into investigative techniques and become a truth-seeker today!</p>
+        <p class="price">For only PHP 499, you can enter our exclusive workshop!</p>
+        <p class="details">See you in March 2024.</p>
+        <p class="exciting-factor">Become the detective of the future!</p> <!-- Flickering neon text effect -->
+        <button class="cta-button">Register Now</button>
+    </div>
+</body>
+</html>
